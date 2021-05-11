@@ -10,13 +10,16 @@
     <style>
       body {
         height: 100vh;
+        background-color: #15202b;
       }
       .sign-in-box {
         max-width: 400px;
         margin: 1.25rem auto;
+        background-color: #15202b;
       }
       .logo-box {
         margin: 1.5rem 3rem;
+        background-color: #15202b;
       }
       footer a {
         text-decoration: underline;
@@ -86,7 +89,6 @@
     <div class="content has-text-centered">
     	{{ if eq .Footer "-" }}
     	{{ else if eq .Footer ""}}
-    	<p>Secured with <a href="https://github.com/oauth2-proxy/oauth2-proxy#oauth2_proxy" class="has-text-grey">OAuth2 Proxy</a> version {{.Version}}</p>
     	{{ else }}
     	<p>{{.Footer}}</p>
     	{{ end }}

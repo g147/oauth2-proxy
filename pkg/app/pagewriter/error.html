@@ -22,17 +22,21 @@
 <style>
   body {
     height: 100vh;
+    background-color: #15202b;
   }
   .error-box {
     margin: 1.25rem auto;
     max-width: 600px;
+    background-color: #15202b;
   }
   .status-code {
     font-size: 12rem;
     font-weight: 600;
+    background-color: #15202b;
   }
   #more-info.card {
     border: 1px solid #f0f0f0;
+    background-color: #15202b;
   }
   footer a {
     text-decoration: underline;
@@ -95,7 +99,6 @@
   <div class="content has-text-centered">
     {{ if eq .Footer "-" }}
     {{ else if eq .Footer ""}}
-    <p>Secured with <a href="https://github.com/oauth2-proxy/oauth2-proxy#oauth2_proxy" class="has-text-grey">OAuth2 Proxy</a> version {{.Version}}</p>
     {{ else }}
     <p>{{.Footer}}</p>
     {{ end }}
