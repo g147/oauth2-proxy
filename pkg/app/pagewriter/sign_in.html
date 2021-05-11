@@ -56,9 +56,9 @@
       <form method="GET" action="{{.ProxyPrefix}}/start">
         <input type="hidden" name="rd" value="{{.Redirect}}">
           {{ if .SignInMessage }}
-          <p class="block">{{.SignInMessage}}</p>
+          <p class="block" style="color: #4d4dff;">{{.SignInMessage}}</p>
           {{ end}}
-          <button type="submit" class="button block is-primary" style="background-color: #15202b;">Sign in with {{.ProviderName}}</button>
+          <button type="submit" class="button block is-primary" style="background-color: #4d4dff;">Sign in with {{.ProviderName}}</button>
       </form>
 
       {{ if .CustomLogin }}
@@ -86,7 +86,7 @@
     </div>
   </section>
 
-  <footer class="footer has-text-grey has-background-light is-size-7">
+  <footer class="footer has-text-grey has-background-light is-size-7" style="background-color: #15202b;">
     <div class="content has-text-centered">
     	{{ if eq .Footer "-" }}
     	{{ else if eq .Footer ""}}
