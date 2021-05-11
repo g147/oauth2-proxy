@@ -45,7 +45,6 @@
     </script>
   </head>
   <body style="background-color: #15202b;">
-  <section class="section" style="color: #15202b;">
     <div class="box block sign-in-box has-text-centered">
       {{ if .LogoData }}
       <div class="block logo-box">
@@ -84,18 +83,6 @@
         {{ end }}
     </form>
     </div>
-  </section>
-
-  <footer class="footer has-text-grey has-background-light is-size-7" style="background-color: #15202b;">
-    <div class="content has-text-centered">
-    	{{ if eq .Footer "-" }}
-    	{{ else if eq .Footer ""}}
-    	{{ else }}
-    	<p>{{.Footer}}</p>
-    	{{ end }}
-    </div>
-	</footer>
-
   </body>
 </html>
 {{end}}
