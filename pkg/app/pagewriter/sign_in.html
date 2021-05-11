@@ -21,6 +21,7 @@
         margin: 1.5rem 3rem;
         background-color: #15202b;
       }
+
       footer a {
         text-decoration: underline;
       }
@@ -43,8 +44,8 @@
       }
     </script>
   </head>
-  <body class="has-background-light">
-  <section class="section">
+  <body style="background-color: #15202b;">
+  <section class="section" style="color: #ffffff;">
     <div class="box block sign-in-box has-text-centered">
       {{ if .LogoData }}
       <div class="block logo-box">
@@ -57,7 +58,7 @@
           {{ if .SignInMessage }}
           <p class="block">{{.SignInMessage}}</p>
           {{ end}}
-          <button type="submit" class="button block is-primary">Sign in with {{.ProviderName}}</button>
+          <button type="submit" class="button block is-primary" style="background-color: #15202b;">Sign in with {{.ProviderName}}</button>
       </form>
 
       {{ if .CustomLogin }}
