@@ -45,13 +45,12 @@
     </script>
   </head>
   <body style="background-color: #15202b;">
-    <div class="box block sign-in-box has-text-centered">
+    <div class="sign-in-box has-text-centered">
       {{ if .LogoData }}
       <div class="block logo-box">
         {{.LogoData}}
       </div>
       {{ end }}
-
       <form method="GET" action="{{.ProxyPrefix}}/start">
         <input type="hidden" name="rd" value="{{.Redirect}}">
           {{ if .SignInMessage }}
@@ -59,29 +58,6 @@
           {{ end}}
           <button type="submit" class="button block is-primary" style="background-color: #4d4dff;">Sign in with {{.ProviderName}}</button>
       </form>
-
-      {{ if .CustomLogin }}
-      <hr>
-
-      <form method="POST" action="{{.ProxyPrefix}}/sign_in" class="block">
-        <input type="hidden" name="rd" value="{{.Redirect}}">
-
-        <div class="field">
-          <label class="label" for="username">Username</label>
-          <div class="control">
-            <input class="input" type="email" placeholder="e.g. userx@example.com"  name="username" id="username">
-          </div>
-        </div>
-
-        <div class="field">
-          <label class="label" for="password">Password</label>
-          <div class="control">
-            <input class="input" type="password" placeholder="********" name="password" id="password">
-          </div>
-        </div>
-        <button class="button is-primary">Sign in</button>
-        {{ end }}
-    </form>
     </div>
   </body>
 </html>
